@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "734972559876",
+    "project_id": "gate-x--v1",
+    "storage_bucket": "gate-x--v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734972559876:android:e7409b7a388b5dc7a7eb51",
+        "android_client_info": {
+          "package_name": "com.example.gate_x"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApCsunM-nUrjklVN1mBTwIKVGabruuv4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
