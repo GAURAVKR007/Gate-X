@@ -1,4 +1,5 @@
 import 'package:gate_x/components/custom_appbar.dart';
+import 'package:gate_x/components/navbar/bottom_navbar.dart';
 import 'package:gate_x/pages/auth/register_user.dart';
 import 'package:gate_x/pages/homeScreens/home_screen.dart';
 import 'package:gate_x/providers/user_providers.dart';
@@ -153,7 +154,7 @@ class _SigninUserState extends ConsumerState<SigninUser> {
 
                             Navigator.of(context).pushReplacement(
                                 MaterialPageRoute(
-                                    builder: (context) => const HomeScreen()));
+                                    builder: (context) => const MainScreen()));
                           } catch (e) {
                             Fluttertoast.showToast(
                               msg: e.toString(),

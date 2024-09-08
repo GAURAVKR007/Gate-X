@@ -37,7 +37,8 @@ class _BottomNavbarState extends State<MainScreen> {
           child: GNav(
             tabBorder: const Border(
               top: BorderSide(color: Color.fromRGBO(12, 4, 46, 0.8), width: 1),
-              bottom: BorderSide(color: Color.fromRGBO(12, 4, 46, 0.8), width: 1),
+              bottom:
+                  BorderSide(color: Color.fromRGBO(12, 4, 46, 0.8), width: 1),
             ),
             backgroundColor: const Color.fromRGBO(84, 62, 233, 1),
             color: Colors.white,

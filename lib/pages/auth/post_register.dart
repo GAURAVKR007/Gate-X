@@ -1,4 +1,5 @@
 import 'package:gate_x/components/custom_appbar.dart';
+import 'package:gate_x/components/navbar/bottom_navbar.dart';
 import 'package:gate_x/pages/homeScreens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -104,7 +105,7 @@ class _PostRegisterState extends ConsumerState<PostRegister> {
                     ),
                     onPressed: () {
                       Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => const HomeScreen()));
+                          builder: (context) => const MainScreen()));
                     },
                     child: const Padding(
                       padding: EdgeInsets.all(10.0),

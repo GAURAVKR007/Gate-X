@@ -14,9 +14,7 @@ import 'package:gate_x/providers/controllers/home_controller.dart';
 import 'package:gate_x/providers/staticProviders/homepage_resouces_provider.dart';
 import 'package:gate_x/providers/staticProviders/homepage_startlearning_provider.dart';
 import 'package:gate_x/providers/user_providers.dart';
-
 import 'package:flutter/material.dart';
-
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:swipable_stack/swipable_stack.dart';

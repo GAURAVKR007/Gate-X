@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gate_x/models/user_model.dart';
 
-
 final userProvider = StateNotifierProvider<UserNotifier, LocalUser>((ref) {
   return UserNotifier();
 });
@@ -38,6 +37,16 @@ class UserNotifier extends StateNotifier<LocalUser> {
             ),
           ),
         );
+
+  Future<void> removeUserInfo() async {
+    state = LocalUser(
+      id: 'ERR001',
+      user: const UserModel(
+        username: 'Error User',
+        emailId: 'error@gmail.com',
+      ),
+    );
+  }
 
   Future<void> retreiveUserInfo(String email) async {
     QuerySnapshot response = await _firestore
