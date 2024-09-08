@@ -2,8 +2,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:gate_x/components/navbar/bottom_navbar.dart';
 import 'package:gate_x/pages/auth/signin_user.dart';
-import 'package:gate_x/pages/homeScreens/home_screen.dart';
 import 'package:gate_x/providers/user_providers.dart';
 import 'firebase_options.dart';
 
@@ -35,7 +35,7 @@ class MyApp extends ConsumerWidget {
             ref
                 .read(userProvider.notifier)
                 .retreiveUserInfo(snapshot.data!.email!);
-            return const HomeScreen();
+            return const MainScreen();
           } else {
             return const SigninUser();
           }

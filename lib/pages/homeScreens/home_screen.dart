@@ -3,8 +3,8 @@ import "dart:async";
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:gate_x/components/cards/card_widget.dart';
 import 'package:gate_x/components/data_search.dart';
-import 'package:gate_x/components/navbar/bottom_navbar.dart';
 import 'package:gate_x/pages/homeScreens/components/expansion_list_topics_widget.dart';
+import 'package:gate_x/pages/homeScreens/components/home_page_cube_widget.dart';
 import 'package:gate_x/pages/homeScreens/components/home_screen_resource_card.dart';
 import 'package:gate_x/pages/homeScreens/components/home_screen_slider.dart';
 import 'package:gate_x/pages/homeScreens/components/home_screen_subtitle.dart';
@@ -104,6 +104,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
+
     return Scaffold(
       body: CustomScrollView(
         slivers: [
@@ -298,16 +299,18 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                   const PyqWidget(),
                   const SizedBox(height: 20),
                   const HomeScreenSubtitle(
-                    subtitle: "Notes",
-                    seeAll: true,
+                    subtitle: "Explore More",
+                    seeAll: false,
                   ),
+                  const SizedBox(height: 20),
+                  const HomePageCubeWidget(),
+                  const SizedBox(height: 20),
                 ],
               ),
             ),
           ),
         ],
       ),
-      bottomNavigationBar: const BottomNavbar(),
     );
   }
 }
