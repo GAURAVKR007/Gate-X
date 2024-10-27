@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:gate_x/components/navbar/bottom_navbar.dart';
 import 'package:gate_x/pages/accountScreens/components/account_details_dashboards.dart';
 import 'package:gate_x/pages/accountScreens/components/account_details_my_accounts_widget.dart';
 import 'package:gate_x/providers/user_providers.dart';

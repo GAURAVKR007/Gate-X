@@ -1,7 +1,6 @@
 import 'package:gate_x/components/custom_appbar.dart';
 import 'package:gate_x/components/navbar/bottom_navbar.dart';
 import 'package:gate_x/pages/auth/register_user.dart';
-import 'package:gate_x/pages/homeScreens/home_screen.dart';
 import 'package:gate_x/providers/user_providers.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';

@@ -1,6 +1,5 @@
 import 'package:gate_x/components/custom_appbar.dart';
 import 'package:gate_x/components/navbar/bottom_navbar.dart';
-import 'package:gate_x/pages/homeScreens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
